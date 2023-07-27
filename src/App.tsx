@@ -6,12 +6,12 @@ function App() {
   const [contents, setContents] = useState<string>("");
 
   //todo 타입 설정
-  type TodoType = {
+  interface TodoType {
     id: string;
     title: string;
     contents: string;
     isDone: boolean;
-  };
+  }
 
   //인터페이스 지정해서 타입 설정
   const [todos, setTodos] = useState<TodoType[]>([
